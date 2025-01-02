@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.1);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4a3a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você tem uma surpresa!</h1>
+    <img src="https://img.freepik.com/vetores-premium/caixa-de-presente-de-papelao-surpresa-com-premio-de-fita-ou-recompensa-em-estilo-cartoon_191307-286.jpg" alt="Caixa de Presente" class="box" width="200" onclick="abrirSurpresa()">
+    <p>Ou clique no botão abaixo:</p>
+    <button onclick="abrirSurpresa()">Abrir a Surpresa</button>
+
+    <script>
+        function abrirSurpresa() {
+            window.open("https://drive.google.com/file/d/1F9F4XmL3bkOkdY89FYekGwK8a3vw8wCS/view?usp=sharing", "_blank");
+        }
+    </script>
+</body>
+</html>
